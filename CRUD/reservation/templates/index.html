@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+{% block content %}
+		<h1>Reservations</h1>
+
+		{% if reservations %}
+			{% for reservation in reservations %}
+<h2>Reservation id:{{reservation.id}}
+    <a class="reservation-id" href="{{url_for('reservation', id=reservation.id)}}">
+        <input class="btn btn-info" type="submit" value="Update Reservation" >
+ </a></h2>
+                <p>{{reservation.occasion}} </p>
+				<p>{{reservation.date.strftime("%m/%d/%Y")}}</p>
+                <p>{{reservation.package}} </p>
+                <p>{{reservation.location}} </p>
+                <p>{{reservation.addons}} </p>
+			{% endfor %}
+		{% endif %}
+        <form action="{{ url_for('history')}}">
+            <p> <input class="btn btn-success" type="submit" value="Finalize Reservation"></p>
+        </form>
+
+{% endblock %}

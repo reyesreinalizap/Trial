@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block content %}
+<h2 class="k">Welcome to</h2>
+<h1 class="j"> SUBLIME CATERING</h1>
+<p>
+</p>
+
+<p>
+    <font size="5">
+    {% if current_user.is_authenticated %}
+        <a class="nav-item nav-link" href="{{ url_for('history') }}">Reservation History</a>
+    {% else %}
+        <a class="nav-item nav-link" href="{{ url_for('register') }}">Make a Reservation</a>
+    {% endif %}
+    </font>
+</p>
+
+{% endblock content %}
+

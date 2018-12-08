@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Reservation</title>
+</head>
+ <body>
+{% extends "layout.html" %}
+{% block content %}
+    <h1>Make Reservation</h1>
+    <form action="" method="POST" validate>
+        {{form.hidden_tag()}}
+        {{legend}}
+        <p>
+            {{form.package.label}}<br>
+            {{form.package}}<br>
+             {% for error in form.package.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+
+        </p>
+        <p>
+            {{form.date.label}}<br>
+            {{form.date}}<br>
+             {% for error in form.date.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>
+            {{form.location.label}}<br>
+            {{form.location}}<br>
+             {% for error in form.location.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>
+            {{form.occasion.label}}<br>
+            {{form.occasion}}<br>
+             {% for error in form.occasion.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>
+            {{form.addons.label}}<br>
+            {{form.addons}}<br>
+             {% for error in form.addons.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>
+            {{form.submit()}}
+        </p>
+    </form>
+{% endblock %}
+  </body>
+</html>

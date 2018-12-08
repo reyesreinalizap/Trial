@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block content %}
+
+
+
+<h2>Reservation id:{{reservation.id}}</h2>
+                <p>{{reservation.occasion}} </p>
+				<p>{{reservation.date.strftime("%m/%d/%Y")}}</p>
+                <p>{{reservation.package}} </p>
+                <p>{{reservation.location}} </p>
+                <p>{{reservation.addons}} </p>
+<div>
+    <a class="reservation-id" href="{{url_for('reservation', id=reservation.id)}}"></a>
+          <p> <a class="btn btn-info" href="{{ url_for('update_reservation', id=reservation.id) }}">Update Reservation</a></p>
+       <form action="{{ url_for('delete_reservation', id=reservation.id) }}" method="POST">
+           <p><input class="btn btn-danger" type="submit" value="Delete Reservation"></p>
+       </form>
+          </div>
+{% endblock %}

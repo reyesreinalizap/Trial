@@ -1,0 +1,28 @@
+
+{% extends "layout.html" %}
+{% block content %}
+
+
+<h1>Update Reservation</h1>
+
+		{% if form %}
+			<form action="{{url_for('update_reservation', id=form.id.data)}}" method="POST">
+				{{form.hidden_tag()}}
+				{{form.package.label}}<br />
+				{{form.package}}<br />
+				{{form.date.label}}<br />
+				{{form.date}}<br /><br />
+                {{form.location.label}}<br />
+				{{form.location}}<br /><br />
+                {{form.occasion.label}}<br />
+				{{form.occasion}}<br /><br />
+                {{form.addons.label}}<br />
+				{{form.addons}}<br /><br />
+				<input class="btn btn-info" type="submit" value="Update Reservation">
+            </form>
+            <form action="{{ url_for('delete_reservation', id=form.id.data) }}" method="POST">
+            <input class="btn btn-danger" type="submit" value="Delete Reservation">
+			</form>
+	{% endif %}
+{% endblock %}
+

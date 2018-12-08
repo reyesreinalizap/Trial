@@ -1,0 +1,179 @@
+#WelcomeNote{
+    margin-top: 150pt;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 100pt;
+    color: white !important;
+}
+body{
+    background-color: transparent !important;
+}
+tr:nth-child(even) {background-color: #ffffff}
+table{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15pt;
+}
+
+#maincontainer{
+    background-color: skyblue !important;
+}
+
+#reserve{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25pt;
+    border-color: transparent !important;
+    margin-bottom: 150pt;
+}
+
+#topbar{
+    color: transparent !important;
+    background-color: deepskyblue !important;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 13pt;
+    border-color: transparent !important;
+}
+
+#YenlizName{
+    color: white !important;
+    font-size: 23pt;
+}
+
+#maincontainer{
+    fill: skyblue !important;
+}
+
+#headertxt{
+    margin-top: 50pt;
+    color: white !important;
+}
+p{
+    color: white !important;
+    font-size: 20pt;
+}
+
+#inputinfo
+{
+    margin-left: 20pt;
+    margin-right: 20pt;
+}
+
+#headertxt2{
+    margin-top: 70pt;
+    color: white !important;
+}
+
+.registerheader{
+    margin: 100px;
+}
+
+.control-label{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white !important;
+}
+
+#registcontainer{
+    margin-left: 190pt;
+    margin-right: 50pt;
+    background-color: skyblue !important;
+}
+
+#regist{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20pt;
+    
+}
+
+.jumbotron{
+    background-color: transparent !important;
+    margin-top: 75pt;
+}
+
+h{
+    color: white !important;
+    font-size: 30pt;
+}
+
+
+
+#lastpart{
+    margin-bottom: 80pt;
+}
+
+#username, #password, #email, #password_confirm{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black !important;
+}
+
+.controls{
+    border-color: transparent !important;
+}
+
+#menupage{
+    margin-top: 75pt;
+}
+
+#menutype{
+    color: white !important;
+}
+
+
+.well-lg{
+    border-color: deepskyblue !important;
+    background-color: transparent !important;
+    color: transparent !important;
+}
+
+.menu{
+    font-size: 12px;
+    color: white !important;
+}
+
+li, h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 12pt;
+}
+
+#menuheader{
+    font-size: 20pt;
+    color: white !important;
+}
+.menuNumber{
+    color: white !important;
+    font-size: 15pt;
+}
+
+.includes, .inclusion{
+    color: white !important;
+}
+
+.pricepoint{
+    font-size: 15pt;
+}
+
+#ReservationPage{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30pt;
+    color: white !important;
+    margin-top: 75pt;
+}
+#justanotherheader{
+    font-size: 20pt;
+}
+
+#justanothernametag{
+    font-size: 15pt;
+}
+.wellmargin{
+    margin-left: 65pt;
+    margin-right: 65pt;
+}
+#selector{
+    color: black !important;
+    margin-left: 55pt;
+}
+#packagechooser{
+    font-size: 16pt;
+}
+
+#dp3{
+    color: black !important;
+}

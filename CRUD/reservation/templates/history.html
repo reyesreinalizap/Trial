@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block content %}
+		<h1>Reservations</h1>
+
+    {% for reservation in reservations %}
+        <h2>Reservation id:{{reservation.id}}</h2>
+                <p>{{reservation.occasion}} </p>
+				<p>{{reservation.date.strftime("%m/%d/%Y")}}</p>
+                <p>{{reservation.package}} </p>
+                <p>{{reservation.location}} </p>
+                <p>{{reservation.addons}} </p>
+			{% endfor %}
+
+{% endblock %}
